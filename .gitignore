@@ -1,0 +1,12 @@
+# User-specific files/C++ cache
+*.suo
+*.user
+*.sdf
+*.opensdf
+
+# Visual Studio cache/options directory
+.vs/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
