@@ -1,0 +1,277 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DOWNLOAD DIALOGEX 0, 0, 330, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Download"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_HEADERRECT,"Static",SS_WHITERECT,0,0,332,35
+    LTEXT           "*",IDC_HEADERLABEL,16,6,271,8,0,WS_EX_TRANSPARENT
+    LTEXT           "*",IDC_HEADERDESCRIPTION,27,16,260,18,0,WS_EX_TRANSPARENT
+    CONTROL         109,IDC_PICTURE,"Static",SS_BITMAP,293,1,35,33
+    DEFPUSHBUTTON   "Cancel",IDOK,272,200,50,14
+    LTEXT           "File:",IDC_STATIC_FILE,27,45,85,8
+    LTEXT           "",IDC_FILE,112,45,191,8
+    LTEXT           "Speed:",IDC_STATIC_SPEED,27,57,85,8
+    LTEXT           "",IDC_SPEED,112,57,191,8
+    LTEXT           "Status:",IDC_STATIC_STATUS,27,69,85,8
+    LTEXT           "",IDC_STATUS,112,69,191,8
+    LTEXT           "Elapsed Time:",IDC_STATIC_ELAPSED,27,81,85,8
+    LTEXT           "",IDC_ELAPSED,112,81,191,8
+    LTEXT           "Remaining Time:",IDC_STATIC_REMAINING,27,93,85,8
+    LTEXT           "",IDC_REMAINING,112,93,191,8
+    LTEXT           "Current File:",IDC_STATIC_PROGRESSFILE,27,114,77,8
+    RTEXT           "",IDC_STATUS_FILE,104,114,199,8
+    CONTROL         "",IDC_PROGRESS_FILE,"msctls_progress32",PBS_SMOOTH,27,125,276,13
+    LTEXT           "Overall Progress:",IDC_STATIC_PROGRESSALL,27,142,77,8
+    RTEXT           "",IDC_STATUS_OVERALL,104,142,199,8
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,27,153,276,13
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,193,332,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,35,332,1
+END
+
+IDD_DOWNLOAD_SIMPLE DIALOGEX 0, 0, 166, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Download"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDOK,109,33,50,14
+    LTEXT           "...",IDC_SIMPLE,7,7,152,19
+END
+
+IDD_USERPASS DIALOGEX 0, 0, 168, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "User Name and Password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            32514,IDC_STATIC,7,7,20,20
+    LTEXT           "User Name:",IDC_USERNAME0,42,7,38,8
+    EDITTEXT        IDC_USERNAME,42,16,80,12,ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_PASSWORD0,42,38,34,8
+    EDITTEXT        IDC_PASSWORD,42,47,80,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,56,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,111,69,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DOWNLOAD, DIALOG
+    BEGIN
+        VERTGUIDE, 27
+        VERTGUIDE, 104
+        VERTGUIDE, 112
+        VERTGUIDE, 303
+    END
+
+    IDD_DOWNLOAD_SIMPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 159
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_USERPASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        VERTGUIDE, 42
+        VERTGUIDE, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,3,0,0
+ PRODUCTVERSION 5,3,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "http://www.istool.org/"
+            VALUE "CompanyName", "Bjørnar Henden"
+            VALUE "FileDescription", "Download DLL"
+            VALUE "FileVersion", "5, 3, 0, 0"
+            VALUE "InternalName", "isxdl"
+            VALUE "LegalCopyright", "Copyright © 2002-2009"
+            VALUE "OriginalFilename", "isxdl.dll"
+            VALUE "ProductName", "ISX Download DLL"
+            VALUE "ProductVersion", "5, 3, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SMALL               BITMAP                  "WizModernSmallImage.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SETUP               ICON                    "setup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE               "File Download"
+    IDS_ABORT               "Do you want to cancel the download?"
+    IDS_FILECOUNT           "%1 (%2 of %3)"
+    IDS_BYTECOUNT1          "%1 KB"
+    IDS_BYTECOUNT2          "%1 KB of %2 KB (%3%)"
+    IDS_STATUS_FILEINFO     "Getting file information..."
+    IDS_STATUS_REDIRECT     "Redirecting to %1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_SENDING_REQUEST "Sending request..."
+    IDS_STATUS_RESOLVING_NAME "Resolving %1"
+    IDS_STATUS_CONNECTED_TO_SERVER "Connected to %1"
+    IDS_STATUS_RECEIVING    "Receiving..."
+    IDS_STATUS_CONNECTING   "Connecting to %1"
+    IDS_ERROR_CONNECT       "Error connecting to Internet.\n\n%1"
+    IDS_ERROR_HTTPOPEN      "Error opening %1.\n\nThe server returned status code %2."
+    IDS_ERROR_READ          "Error reading URL.\n\n%1"
+    IDS_ERROR_WRITE         "Error writing file %1.\n\n%2"
+    IDS_ERROR_FILEOPEN      "Error opening file %1.\n\n%2"
+    IDS_ERROR_URL           "'%1' is an invalid URL."
+    IDS_ERROR_URLOPEN       "Error opening %1.\n\n%2"
+    IDS_ERROR_REQUEST       "Error sending request.\n\n%1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_PROTOCOL      "Unsupported protocol. Only HTTP and FTP protocols are supported."
+    IDS_ERROR_CONNECT_SERVER "Failed to connect to %1.\n\n%2"
+    IDS_ERROR_STATUSCODE    "Failed to query status code.\n\n%1"
+    IDS_ERROR_REQUESTFILE   "Error requesting file."
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_ABOUT               "About..."
+    IDS_ABOUT               "ISX Download DLL\nCopyright © 2002, 2003\nBjørnar Henden\n\nhttp://www.istool.org/"
+    IDS_LABEL               "Download"
+    IDS_DESCRIPTION         "Setup is now downloading additional files to your computer."
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

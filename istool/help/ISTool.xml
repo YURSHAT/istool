@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE easyhelp[
+	<!ELEMENT easyhelp (windows?,contents?,chmfile?,projectname?,header?,footer?,extras?,external?)>
+	<!ELEMENT windows (window*)>
+	<!ELEMENT contents (item*)>
+	<!ELEMENT chmfile (#PCDATA)>
+	<!ELEMENT projectname (#PCDATA)>
+	<!ELEMENT header (#PCDATA)>
+	<!ELEMENT footer (#PCDATA)>
+	<!ELEMENT extras (item*)>
+	<!ELEMENT external (file*)>
+	<!ELEMENT item (title,filename,html,childs?)>
+	<!ELEMENT file (source)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT filename (#PCDATA)>
+	<!ELEMENT html (#PCDATA)>
+	<!ELEMENT source (#PCDATA)>
+	<!ELEMENT childs (item*)>
+	<!ELEMENT window (windowname,buttons?,navpane?)>
+	<!ELEMENT windowname (#PCDATA)>
+	<!ELEMENT buttons (#PCDATA)>
+	<!ELEMENT navpane (#PCDATA)>
+]>
+<easyhelp>
+	<windows>
+		<window>
+			<windowname>default</windowname>
+			<buttons>6303806</buttons>
+			<navpane>13600</navpane>
+		</window>
+	</windows>
+	<contents>
+		<item>
+			<title>Welcome</title>
+			<filename>welcome.html</filename>
+			<html>
+			<![CDATA[{keyword:welcome;inno setup;istool;what is istool?}
+{alink:overview}
+
+<h2>Welcome</h2>
+Welcome to ISTool help. This help is not complete, but hopefully
+it will be some day. For now I've only added topics for the most
+important features in ISTool, and the features that get most of
+the questions.
+
+<h2>What is ISTool, and why was it created?</h2>
+Jordan Russell has created a fantastic setup compiler that creates
+setups that can match most of the commercial installers on the market.
+This program is called <a target="_blank" href="http://www.innosetup.com/">Inno Setup</a>,
+and is freeware for both commercial and private developers. If there
+is a disadvantage to Inno Setup, it would be that you will have to
+manually create the setup scripts. The format is fairly simple, but
+personally I have problems remembering all the options and parameters,
+and the meaning of them all.
+So that is why I decided to create ISTool, which displays all this
+information visually, and has context sensitive help for all 
+parameters and options.
+
+<p>
+ISTool is not a complete package for creating installations. It is merely
+an addition to Inno Setup, and <em>requires</em> that Inno Setup is installed
+to function properly.
+</p>
+]]>
+			</html>
+		</item>
+		<item>
+			<title>Frequently Asked Questions</title>
+			<filename>faq.html</filename>
+			<html>
+			<![CDATA[<h2>Frequently Asked Questions</h2>
+
+<p class="question">
+When will ISTool support Inno Setup version x?
+</p>
+
+<p class="answer">
+If the version of ISTool don't match the version of Inno Setup this
+doesn't mean that ISTool won't work with that version of Inno Setup.
+ISTool is designed to support any future version of Inno Setup, so if
+a particular version of Inno Setup has a feature that ISTool doesn't support
+directly you can still use that feature. Just add it to the script manually.
+</p>
+
+<p class="answer">
+Sometimes Inno Setup is released without adding anything new that ISTool
+needs to support. It could be a bug fix, or some feature that has changed.
+In these cases I will not release a new version of ISTool.
+</p>]]>
+			</html>
+		</item>
+		<item>
+			<title>Tasks</title>
+			<filename>tasks.html</filename>
+			<html>
+			<![CDATA[{keyword:tasks;howto}
+
+<h2>Tasks</h2>
+
+<ul>
+	<li><a href="editingmultipleitems.html">Editing multiple items</a></li>
+	<li><a href="customizevisiblecolumns.html">Customize visible columns</a></li>
+	<li><a href="translateistool.html">Translate ISTool</a></li>
+</ul>
+
+<!--p><a href="#" onclick="MyControl.Click();return false">See Also</a></p>
+
+<object id=MyControl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+   <PARAM name="Command" value="ALink,menu">
+   <PARAM name="Item1" value="c:\Help\MyFile.chm">
+   <PARAM name="Item2" value="task">
+   <PARAM name="Item3" value="overview">
+</OBJECT-->
+]]>
+			</html>
+			<childs>
+				<item>
+					<title>Editing multiple items</title>
+					<filename>editingmultipleitems.html</filename>
+					<html>
+					<![CDATA[{keyword:editing multiple items;multiple items editing;items;tasks,Editing multiple items}
+{alink:task}
+
+<img align=right src="filesaslist.png" alt="How to view files as list"/>
+
+<H2>Editing multiple items</H2>
+
+<p>
+I get a lot of mail from people suggesting that ISTool should allow multiple
+files to be edited at once. This feature has actually been in ISTool since
+the very first version. To allow editing of several files at once, switch
+from treeview to listview by marking the <b>Files As List</b> menu item on
+the View menu, as shown in the picture. Then you can select as many files
+as you like by holding the ctrl or shift keys while selecting.
+</p>
+
+<p>
+All listview sections in ISTool allow editing of multiple items at the 
+same time, not just the file section.
+</p>
+
+<br clear=all>
+<p><a href="#" onclick="MyControl.Click();return false">See Also</a></p>
+
+<object id=MyControl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+   <PARAM name="Command" value="ALink,menu">
+	<param name="Item1" value="{helpfile}">
+   <PARAM name="Item2" value="task">
+</OBJECT>
+]]>
+					</html>
+				</item>
+				<item>
+					<title>Customize visible columns</title>
+					<filename>customizevisiblecolumns.html</filename>
+					<html>
+					<![CDATA[{keyword:columns;visible columns;customize columns;tasks,Customize visible columns}
+{alink:task}
+
+<H2>Customize visible columns</H2>
+
+<img align=right src="customize.png" alt="Menu item for customize">
+
+<P>
+All columns in the listviews can be customized. The columns can be
+rearranged by clicking the column header and dragging it where you
+want. You can also customize what columns should be visible. Open
+the customization dialog by selecting <b>Customize</b> from the
+View menu.
+
+<br clear=all>
+
+<p>
+<img align=right src="customize2.png" alt="Dialog for customize">
+This will bring up this window. Check the columns you want displayed.
+
+<br clear=all>
+<p><a href="#" onclick="MyControl.Click();return false">See Also</a></p>
+
+<object id=MyControl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+   <PARAM name="Command" value="ALink,menu">
+	<param name="Item1" value="{helpfile}">
+   <PARAM name="Item2" value="task">
+</OBJECT>
+]]>
+					</html>
+				</item>
+				<item>
+					<title>Translate ISTool</title>
+					<filename>translateistool.html</filename>
+					<html>
+					<![CDATA[{keyword:translate;Languages,Translate ISTool;transtool;tasks,Translate ISTool}
+{alink:task}
+
+<h2>Translate</h2>
+
+<p><b>Method 1</b></p>
+
+<ol>
+	<li>Copy one of the existing language files (*.lng).</li>
+	<li>Translate it in any text editor.</li>
+</ol>
+
+<p><b>Method 2</b></p>
+<ol>
+	<li>Download <a href="http://www.istool.org/getfile.asp?file=23">TransTool</a>.</li>
+	<li>Copy the ISTool.idx to the ISTool directory if it is newer than your ISTool installation.</li>
+	<li>Start TransTool.</li>
+</ol>	
+
+<br clear=all>
+<p><a href="#" onclick="MyControl.Click();return false">See Also</a></p>
+
+<object id=MyControl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+   <PARAM name="Command" value="ALink,menu">
+	<param name="Item1" value="{helpfile}">
+   <PARAM name="Item2" value="task">
+</OBJECT>
+]]>
+					</html>
+				</item>
+			</childs>
+		</item>
+		<item>
+			<title>Credits</title>
+			<filename>credits.html</filename>
+			<html>
+			<![CDATA[<!-- Keywords = "credits" -->
+
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<param name="Keyword" value="credits">
+</object>
+
+<h2>Credits</h2>
+
+<p>
+Main icon and some toolbar images by Marc Keeley at <a href="http://www.glyfz.com/" target="_blank">http://www.glyfz.com/</a>.
+
+<p>
+Iwz2iss plugin by <a href="http://strony.wp.pl/wp/mikequ/eng/iwz2iss.htm" target="_blank">Michal Kulczycki</a>.
+
+<p>
+Translations by:
+<ul>
+	<li>Michael Reitz (German)
+	<li>Jean-Michel Coinus (French)
+	<li>Michal Kulczycki (Polish)
+	<li>Fábián László (Hungarian)
+	<li>Jose Antonio Muñoz (Spanish)
+</ul>
+
+<p>
+Text editor component by <a href="http://www.codeproject.com/editctrl/crysedit.asp" target="_blank">Andrei Stcherbatchenko</a>.
+
+<p>
+Jordan Russell for <a href="http://www.innosetup.com/" target="_blank">Inno Setup</a>.
+
+<p>
+Martijn Laan for <a href="http://www.wintax.nl/isx/" target="_blank">My Inno Setup Extensions</a>.
+]]>
+			</html>
+		</item>
+		<item>
+			<title>Links</title>
+			<filename>links.html</filename>
+			<html>
+			<![CDATA[{keyword:links;knowledge base;inno setup,homepage;iwz;installshield;ispp;preprocessor}
+{alink:links}
+
+<H2>Links</H2>
+
+<p><a href="http://www.innosetup.com/" target="_blank">Inno Setup</a></p>
+
+<p>A great freeware installer for Win32 platforms.</p>
+
+<p><a href="http://www13.brinkster.com/vincenzog/" target="_blank">My Inno Setup Extensions Knowledge Base</a></p>
+
+<p>Helps programmers make installer packages using My Inno Setup Extensions.</p>
+
+<p><a href="http://www16.brinkster.com/yackimoff/ispp/" target="_blank">Inno Setup Preprocessor</a></p>
+
+<p>
+Inno Setup Preprocessor (ISPP) is an add-on for Inno Setup (IS) by Jordan Russell and 
+My Inno Setup Extensions (ISX) by Martijn Laan. ISPP allows to conditionaly compile parts 
+of scripts, use compile time variables in script, use built-in functions for reading registry, 
+INI files at compile time.
+</p>
+
+<p><a href="http://strony.wp.pl/wp/mikequ/eng/iwz2iss.htm" target="_blank">Iwz2iss</a></p>
+
+<p>iwz2iss converts InstallShield's IWZ project files into InnoSetup's ISS files.</p>
+]]>
+			</html>
+		</item>
+		<item>
+			<title>Contact</title>
+			<filename>contact.html</filename>
+			<html>
+			<![CDATA[{keyword:contact}
+{alink:overview}
+
+<H2>Contact</H2>
+
+<p>You can contact me by sending a mail to <a href="mailto:istool@istool.org">istool@istool.org</a>.</p>
+]]>
+			</html>
+		</item>
+		<item>
+			<title>Command Line</title>
+			<filename>commandline.html</filename>
+			<html>
+			<![CDATA[{keyword:command line;commandline;compile}
+
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<param name="Keyword" value="contact">
+	<param name="ALink Name" value="Overview">
+</object>
+
+<h2>Command Line Arguments</h2>
+
+<p>Usage: istool.exe [options] ScriptName</p>
+
+<p>where <em>options</em> can be any of the following:</p>
+
+<p><b>-compile</b></p>
+
+<p>Instructs ISTool to compile the script and exit. Useful if you 
+want to use a script to compile your script. This argument must be specified
+before the script file name.</p>
+
+<p><b>-langedit</b></p>
+
+<p>Used for helping translating menus and dialogs. <em>Only useful for internal use.</em></p>]]>
+			</html>
+		</item>
+		<item>
+			<title>Donate</title>
+			<filename>donate.html</filename>
+			<html>
+			<![CDATA[{keyword:donate}
+{alink:donate}
+
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<param name="Keyword" value="contact">
+	<param name="ALink Name" value="Overview">
+</object>
+
+<h2>Donate</h2>
+
+<p>
+ISTool is freeware, and always will be freeware, but there are still costs involved. 
+I have to pay for web space, and development tools costs money. So donations are very
+much appreciated. To donate click the button below.
+</p>
+
+<p>
+
+<a target="_blank" href="https://www.paypal.com/xclick/business=paypal%40bhenden.org&amp;no_shipping=1&amp;item_name=ISTool%20Donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">
+<img src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border="0" title="Click to donate and help the development of ISTool." alt="Make payments with PayPal - it's fast, free and secure!">
+</a>
+
+</p>
+]]>
+			</html>
+		</item>
+		<item>
+			<title>Preferences</title>
+			<filename>preferences.html</filename>
+			<html>
+			<![CDATA[{keyword:preferences}
+{alink:preferences}
+
+<h2>Preferences</h2>
+
+<ul>
+	<li><a href="generalpreferences.html">General Preferences</a></li>
+	<li><a href="editorpreferences.html">Editor Preferences</a></li>
+</ul>
+
+<br clear=all>
+<p><a href="#" onclick="MyControl.Click();return false">See Also</a></p>
+
+<object id=MyControl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+   <PARAM name="Command" value="ALink,menu">
+	<param name="Item1" value="{helpfile}">
+   <PARAM name="Item2" value="preferences">
+</OBJECT>
+]]>
+			</html>
+			<childs>
+				<item>
+					<title>General Preferences</title>
+					<filename>generalpreferences.html</filename>
+					<html>
+					<![CDATA[{keyword:general preferences;preferences,general preferences}
+{alink:preferences}
+
+<h2>General Preferences</h2>
+
+<br clear=all>
+<p><a href="#" onclick="MyControl.Click();return false">See Also</a></p>
+
+<object id=MyControl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+   <PARAM name="Command" value="ALink,menu">
+	<param name="Item1" value="{helpfile}">
+   <PARAM name="Item2" value="preferences">
+</OBJECT>
+]]>
+					</html>
+				</item>
+				<item>
+					<title>Editor Preferences</title>
+					<filename>editorpreferences.html</filename>
+					<html>
+					<![CDATA[{keyword:editor preferences;preferences,editor preferences}
+{alink:preferences}
+
+<h2>Editor Preferences</h2>
+
+<br clear=all>
+<p><a href="#" onclick="MyControl.Click();return false">See Also</a></p>
+
+<object id=MyControl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+   <PARAM name="Command" value="ALink,menu">
+	<param name="Item1" value="{helpfile}">
+   <PARAM name="Item2" value="preferences">
+</OBJECT>
+]]>
+					</html>
+				</item>
+			</childs>
+		</item>
+		<item>
+			<title>Languages</title>
+			<filename>common_languages.html</filename>
+			<html>
+			<![CDATA[{keyword:Languages}
+{alink:languages}
+
+<h2>Languages</h2>
+
+<p>
+This tab displays a list of languages you have defined in your script. If you
+select one or more languages here, the item will only be installed if one of
+your selected languages is chosen during installation.
+</p>
+
+<p>
+If you don't select any languages the entry is always installed, unless other 
+parameters say it shouldn't.
+</p>
+
+<br clear=all>
+<p><a href="#" onclick="MyControl.Click();return false">See Also</a></p>
+
+<object id=MyControl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+   <PARAM name="Command" value="ALink,menu">
+	<param name="Item1" value="{helpfile}">
+   <PARAM name="Item2" value="languages">
+</OBJECT>
+]]>
+			</html>
+		</item>
+	</contents>
+	<chmfile>U:\istool\help\html\ISTool.chm</chmfile>
+	<projectname>ISTool Help</projectname>
+	<header><![CDATA[<!-- HEADER START -->
+<html><head>
+<link type="text/css" rel="stylesheet" href="help.css">
+<title>{title}</title>
+</head><body>
+<!-- HEADER END -->
+]]></header>
+	<footer><![CDATA[<!-- FOOTER START -->
+<br clear=all>
+<hr>
+<div class=small>Copyright &copy; 1999 - 2004 Bj&oslash;rnar Henden ({date})</div>
+</body></html>
+<!-- FOOTER END -->]]></footer>
+	<extras>
+		<item>
+			<title>help</title>
+			<filename>help.css</filename>
+			<html>
+				<![CDATA[BODY
+{
+	/*background-color: #FFFFE8;*/
+	/*background-color: #FFFFD0;*/
+	background-color: #fffbf0;
+	font-family: verdana;
+	font-size: 8pt;
+	color: #000000;
+}
+
+H1
+{
+	font-size: 12pt;
+}
+
+H2
+{
+	font-size: 10pt;
+}
+
+HR
+{
+	height: 1px;
+	color: #808080;
+}
+/*
+A 
+{
+	color: blue;
+	text-decoration: none;
+}
+
+A:VISITED 
+{
+	color: purple;
+}
+
+A:HOVER
+{
+	text-decoration: underline;
+}
+
+A:ACTIVE
+{
+	color: red;
+}
+*/
+a { text-decoration: none }
+a:visited { color: #993399 }
+a:hover { color: #3399ff }
+a:active { color: #ffaa00 }
+
+
+.small {
+	color: #808080;
+	font-size: 8pt;
+	font-family: tahoma;
+	text-align: left;
+}
+
+.question {
+	font-weight: bold;
+}
+
+.answer {
+	font-style: italic;
+}]]>
+				</html>
+		</item>
+		<item>
+			<title>My Inno Setup Extensions merged with Inno Setup 4</title>
+			<filename>myinnosetupextensions.html</filename>
+			<html>
+				<![CDATA[{keyword:isx;my inno setup extensions;inno setup extensions}
+{alink:isx}
+
+<h2>My Inno Setup Extensions</h2>
+
+<p>
+	June 2003 - note: All features of My Inno Setup Extensions have been merged 
+	into the 'official' Inno Setup 4 and it is now recommended to download and
+	use Inno Setup 4 instead of My Inno Setup Extensions. Development on My Inno
+	Setup Extensions features will be continued as part of Inno Setup 4 development.
+</p>
+
+<a href="#" onclick="MyControl.Click()">See Also</a>
+
+<OBJECT id=MyControl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+   <PARAM name="Command" value="KLink, menu">
+   <PARAM name="Item1" value="{helpfile}">
+   <PARAM name="Item2" value="isx">
+</OBJECT>
+]]>
+				</html>
+		</item>
+	</extras>
+	<external>
+		<file>
+			<source>U:\ISTool\help\html\filesaslist.png</source>
+		</file>
+		<file>
+			<source>U:\ISTool\help\html\customize2.png</source>
+		</file>
+		<file>
+			<source>U:\ISTool\help\html\customize.png</source>
+		</file>
+		<file>
+			<source>U:\ISTool\help\html\enable_isx.png</source>
+		</file>
+	</external>
+</easyhelp>

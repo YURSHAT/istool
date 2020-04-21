@@ -1,0 +1,7 @@
+LIBRARY	isxbb
+
+EXPORTS
+	isxbb_Init			= _isxbb_Init@4
+	isxbb_AddImage		= _isxbb_AddImage@8
+	isxbb_StartTimer	= _isxbb_StartTimer@8
+	isxbb_KillTimer		= _isxbb_KillTimer@4

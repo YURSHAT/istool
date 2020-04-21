@@ -1,0 +1,11 @@
+LIBRARY	isxdl
+
+EXPORTS
+	isxdl_Download		= _Download@12
+	isxdl_AddFile		= _AddFile@8
+	isxdl_AddFileSize	= _AddFileSize@12
+	isxdl_DownloadFiles	= _DownloadFiles@4
+	isxdl_ClearFiles	= _ClearFiles@0
+	isxdl_IsConnected	= _IsConnected@0
+	isxdl_SetOption		= _SetOption@8
+	isxdl_GetFileName	= _GetFileName@4

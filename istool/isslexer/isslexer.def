@@ -1,0 +1,8 @@
+LIBRARY	isslexer
+
+EXPORTS
+	GetLexerCount
+	GetLexerName
+	Lex
+	Fold
+	; GetLexerFunction

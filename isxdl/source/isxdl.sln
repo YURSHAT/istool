@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "isxdl", "isxdl.vcproj", "{7967C3A4-B24C-4690-86FE-551A5BC13A9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7967C3A4-B24C-4690-86FE-551A5BC13A9F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7967C3A4-B24C-4690-86FE-551A5BC13A9F}.Debug|Win32.Build.0 = Debug|Win32
+		{7967C3A4-B24C-4690-86FE-551A5BC13A9F}.Release|Win32.ActiveCfg = Release|Win32
+		{7967C3A4-B24C-4690-86FE-551A5BC13A9F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
